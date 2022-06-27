@@ -1,0 +1,905 @@
+<?xml version="1.0" ?>
+<robot name="Garra">
+
+<material name="silver">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.014398281882878528 -0.025690742122199114 -0.000609740841780353" rpy="0 0 0"/>
+    <mass value="1.8964906155637216"/>
+    <inertia ixx="0.0067474811094666905" iyy="0.012552109153161828" izz="0.00656825113782296" ixy="5.2977753472103995e-06" iyz="-1.4596071747086103e-17" ixz="-2.1372335325120506e-17"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="magnetic-encoder-with-side-entry-connector-for-micro-metal-gearmotors1">
+  <inertial>
+    <origin xyz="0.0033127808473464443 0.0010668910869650189 3.2212552756670076e-06" rpy="0 0 0"/>
+    <mass value="0.0001772507772398085"/>
+    <inertia ixx="1.7435589821031143e-09" iyy="4.147519801145712e-09" izz="2.791533303762707e-09" ixy="-2.5516388460974447e-10" iyz="-8.937736071386367e-14" ixz="4.060226755562796e-13"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.015386 0.021776 0.00061" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/magnetic-encoder-with-side-entry-connector-for-micro-metal-gearmotors1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.015386 0.021776 0.00061" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/magnetic-encoder-with-side-entry-connector-for-micro-metal-gearmotors1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="magnetic-encoder-disc-for-micro-metal-gearmotors1">
+  <inertial>
+    <origin xyz="-3.504923645151342e-07 -0.000999908684649286 2.5915910926727764e-07" rpy="0 0 0"/>
+    <mass value="9.035613170806335e-05"/>
+    <inertia ixx="3.6625766037466304e-10" iyy="6.722778127876301e-10" izz="3.6625757355170145e-10" ixy="-9.926167350636332e-24" iyz="5.679628880942226e-21" ixz="9.305781891221561e-25"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.015386 0.017776 0.00061" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/magnetic-encoder-disc-for-micro-metal-gearmotors1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.015386 0.017776 0.00061" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/magnetic-encoder-disc-for-micro-metal-gearmotors1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="micro-metal-gearmotor-carbon-backshaft1">
+  <inertial>
+    <origin xyz="0.005001638557577844 0.013122886730142447 3.231974784198913e-05" rpy="0 0 0"/>
+    <mass value="0.001934470140750029"/>
+    <inertia ixx="9.541744590281688e-08" iyy="3.27363241279705e-08" izz="9.042027236209586e-08" ixy="3.9529920211436693e-10" iyz="6.871166606051666e-10" ixz="8.33911406506458e-10"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.010386 0.044776 0.00061" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/micro-metal-gearmotor-carbon-backshaft1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.010386 0.044776 0.00061" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/micro-metal-gearmotor-carbon-backshaft1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ejemotor1">
+  <inertial>
+    <origin xyz="-0.00010353822034663354 -0.00494522515421128 8.191669751328955e-05" rpy="0 0 0"/>
+    <mass value="6.371726473461555e-05"/>
+    <inertia ixx="5.743615566321498e-10" iyy="6.638620928907061e-11" izz="5.721808521497455e-10" ixy="-3.646955354893016e-12" iyz="2.886015666665293e-12" ixz="-4.6170543366383125e-12"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.015386 0.044776 0.00061" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ejemotor1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.015386 0.044776 0.00061" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ejemotor1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="MultManivela1">
+  <inertial>
+    <origin xyz="-2.3713529983225567e-07 -0.01518702042879918 1.6945275100926829e-07" rpy="0 0 0"/>
+    <mass value="0.08223689939585196"/>
+    <inertia ixx="3.1177504067004353e-05" iyy="2.3712027044957314e-05" izz="3.1177506799172524e-05" ixy="-1.8016987756591402e-10" iyz="1.42577193004058e-10" ixz="5.784670533003624e-12"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.015386 0.054776 0.00061" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/MultManivela1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.015386 0.054776 0.00061" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/MultManivela1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BielaComp2Biela1">
+  <inertial>
+    <origin xyz="0.03549642217481479 -0.10575655070361828 -0.0342293987926633" rpy="0 0 0"/>
+    <mass value="0.01677963886733312"/>
+    <inertia ixx="4.383298540472591e-07" iyy="1.259542467138173e-05" izz="1.2501156876741301e-05" ixy="1.08992174860438e-08" iyz="3.148268378718796e-10" ixz="-3.487289737796592e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.035705 -0.03 -0.031319" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/BielaComp2Biela1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.035705 -0.03 -0.031319" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/BielaComp2Biela1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BielaComp3Biela1">
+  <inertial>
+    <origin xyz="-0.04688618716757541 -0.10575655070457454 0.05611848489382723" rpy="0 0 0"/>
+    <mass value="0.01677963886733312"/>
+    <inertia ixx="8.932802098542142e-06" iyy="1.2595424671381364e-05" izz="4.006684632246432e-06" ixy="-5.933837622570113e-09" iyz="9.147766547973031e-09" ixz="5.516602443449508e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.035705 -0.03 0.007652" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/BielaComp3Biela1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.035705 -0.03 0.007652" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/BielaComp3Biela1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BielaComp1Biela1">
+  <inertial>
+    <origin xyz="-0.015937665056562973 1.9449297216159178e-05 -0.029544288928715384" rpy="0 0 0"/>
+    <mass value="0.01677963886733312"/>
+    <inertia ixx="9.787458271319933e-06" iyy="1.2595424671382624e-05" izz="3.1520284594681124e-06" ixy="-5.176960608111033e-09" iyz="-9.596412461124724e-09" ixz="-5.0489928347158245e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.001423 0.075776 0.018253" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/BielaComp1Biela1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.001423 0.075776 0.018253" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/BielaComp1Biela1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rotulaA21">
+  <inertial>
+    <origin xyz="-0.07074785201360499 -0.03719790868668908 0.09980755631871137" rpy="0 0 0"/>
+    <mass value="0.0009149123527778959"/>
+    <inertia ixx="2.4571240188054456e-08" iyy="3.69452306741319e-08" izz="2.5201726351933615e-08" ixy="2.000048273227742e-09" iyz="-3.464185227441098e-09" ixz="-5.460170344596222e-10"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016204 0.038578 -0.015508" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/rotulaA21.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016204 0.038578 -0.015508" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/rotulaA21.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rotulaA22">
+  <inertial>
+    <origin xyz="0.04817456104735769 -0.03719790868462726 0.01270125915868649" rpy="0 0 0"/>
+    <mass value="0.0009149123527778959"/>
+    <inertia ixx="2.556215481683956e-08" iyy="3.690004529100375e-08" izz="2.4255997106290212e-08" ixy="-4.0638800461014e-09" iyz="6.401583847772383e-19" ixz="-2.0581577129299413e-19"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.102675 0.038578 0.013311" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/rotulaA22.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.102675 0.038578 0.013311" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/rotulaA22.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rotulaA23">
+  <inertial>
+    <origin xyz="-3.0626268587852223e-07 9.131764755476723e-08 7.04680244156819e-08" rpy="0 0 0"/>
+    <mass value="0.0009149123527778959"/>
+    <inertia ixx="2.458253653416599e-08" iyy="3.690004529002119e-08" izz="2.5235615389931096e-08" ixy="2.031940023736373e-09" iyz="3.519423359036824e-09" ixz="5.655828797685727e-10"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.052346 0.075776 0.117925" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/rotulaA23.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.052346 0.075776 0.117925" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/rotulaA23.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Dedo3DedoA1">
+  <inertial>
+    <origin xyz="-0.032517529975948506 -0.056698218736724815 -0.016060935646384014" rpy="0 0 0"/>
+    <mass value="0.07160908222680913"/>
+    <inertia ixx="9.429217302123422e-05" iyy="1.432695420792952e-05" izz="8.812274599027557e-05" ixy="-1.2747556511132877e-05" iyz="-2.2095788710919245e-05" ixz="-5.3376109294633834e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0286 0.073552 0.117053" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Dedo3DedoA1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.0286 0.073552 0.117053" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Dedo3DedoA1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Dedo1DedoA1">
+  <inertial>
+    <origin xyz="0.023003238053583952 -0.07147421873821103 0.006498659657426822" rpy="0 0 0"/>
+    <mass value="0.07160908222680913"/>
+    <inertia ixx="8.504259609084814e-05" iyy="1.4326954204621836e-05" izz="9.737232292391903e-05" ixy="2.550929259128535e-05" iyz="8.186580548276172e-09" ixz="-2.6348030473549884e-09"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.145386 0.058776 0.00711" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Dedo1DedoA1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.145386 0.058776 0.00711" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Dedo1DedoA1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Dedo2DedoA1">
+  <inertial>
+    <origin xyz="-0.03231433390798896 -0.05682599212171427 0.01693486794670046" rpy="0 0 0"/>
+    <mass value="0.07160908222680913"/>
+    <inertia ixx="9.435856077404407e-05" iyy="1.404330779309574e-05" izz="8.834000465229993e-05" ixy="-1.2562831384031314e-05" iyz="2.1743059813141268e-05" ixz="5.217400275529045e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.03085 0.073552 -0.113315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Dedo2DedoA1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.03085 0.073552 -0.113315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Dedo2DedoA1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="DIN_EN_ISO_4014_-_M6_x_401">
+  <inertial>
+    <origin xyz="-3.5049236454809396e-07 9.13155182649672e-08 0.014926620899449069" rpy="0 0 0"/>
+    <mass value="0.011320141578210126"/>
+    <inertia ixx="2.1632200508696017e-06" iyy="2.163220053735148e-06" izz="7.39903412619162e-08" ixy="1.3552527156068805e-20" iyz="-3.643681629203824e-17" ixz="-1.1011428314305904e-20"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.145386 0.058776 0.01711" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/DIN_EN_ISO_4014_-_M6_x_401.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.145386 0.058776 0.01711" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/DIN_EN_ISO_4014_-_M6_x_401.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="DIN_EN_ISO_4036_-_M61">
+  <inertial>
+    <origin xyz="-3.5049250751706396e-07 9.1315258632374e-08 0.001600259158219399" rpy="0 0 0"/>
+    <mass value="0.001651260015927607"/>
+    <inertia ixx="1.5573736574682976e-08" iyy="1.557373612876841e-08" izz="2.8436656986624402e-08" ixy="-1.6940658945086007e-21" iyz="2.117582368135751e-22" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.145386 0.058776 -0.01589" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/DIN_EN_ISO_4036_-_M61.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.145386 0.058776 -0.01589" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/DIN_EN_ISO_4036_-_M61.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="DIN_EN_ISO_4014_-_M6_x_403">
+  <inertial>
+    <origin xyz="-0.012926539783901778 9.131499866671389e-08 -0.00746361922041823" rpy="0 0 0"/>
+    <mass value="0.011320141578210126"/>
+    <inertia ixx="5.962977686637901e-07" iyy="2.163220053735121e-06" izz="1.6409126234676736e-06" ixy="-3.155028321932818e-17" iyz="-1.8228149024912543e-17" ixz="-9.046630014307306e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.035325 0.058776 -0.120224" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/DIN_EN_ISO_4014_-_M6_x_403.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.035325 0.058776 -0.120224" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/DIN_EN_ISO_4014_-_M6_x_403.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="DIN_EN_ISO_4036_-_M63">
+  <inertial>
+    <origin xyz="-0.016771410300862342 0.01477609131540144 -0.0001904383498035067" rpy="0 0 0"/>
+    <mass value="0.001651260015927607"/>
+    <inertia ixx="2.5220926772157016e-08" iyy="1.5573736574680435e-08" izz="1.878946634322563e-08" ixy="8.470329472543003e-22" iyz="1.6940658945086007e-21" ixz="5.5698081148891745e-09"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.048518 0.073552 -0.103114" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/DIN_EN_ISO_4036_-_M63.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.048518 0.073552 -0.103114" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/DIN_EN_ISO_4036_-_M63.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="DIN_EN_ISO_4014_-_M6_x_402">
+  <inertial>
+    <origin xyz="0.01292683879917323 9.131499856956937e-08 -0.007463224204371885" rpy="0 0 0"/>
+    <mass value="0.011320141578210126"/>
+    <inertia ixx="5.962977686638444e-07" iyy="2.163220053735121e-06" izz="1.64091262346766e-06" ixy="3.156383574648425e-17" iyz="-1.8228149024912543e-17" ixz="9.046630014307374e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.063904 0.058776 0.104943" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/DIN_EN_ISO_4014_-_M6_x_402.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.063904 0.058776 0.104943" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/DIN_EN_ISO_4014_-_M6_x_402.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="DIN_EN_ISO_4036_-_M62">
+  <inertial>
+    <origin xyz="-0.014000290683937731 0.014776091315258505 -0.00019004333388090988" rpy="0 0 0"/>
+    <mass value="0.001651260015927607"/>
+    <inertia ixx="2.5220926883636716e-08" iyy="1.5573736128761634e-08" izz="1.8789466677669815e-08" ixy="-8.470329472543003e-22" iyz="-1.6940658945086007e-21" ixz="-5.569807921800391e-09"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.019939 0.073552 0.122053" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/DIN_EN_ISO_4036_-_M62.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.019939 0.073552 0.122053" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/DIN_EN_ISO_4036_-_M62.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+<!-->
+<link name="rotulaA22">
+  <inertial>
+    <origin xyz="0.05412756104735769 0.020718091315372736 -0.01084574084131351" rpy="0 0 0"/>
+    <mass value="0.0009149123527778959"/>
+    <inertia ixx="2.556215481683956e-08" iyy="3.690004529100375e-08" izz="2.4255997106290212e-08" ixy="-4.0638800461014e-09" iyz="6.401583847772383e-19" ixz="-2.0581577129299413e-19"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.096722 0.096494 -0.010236" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/rotulaA22.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.096722 0.096494 -0.010236" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/rotulaA22.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+
+<link name="rotulaA23">
+  <inertial>
+    <origin xyz="-0.14906830626268588 0.020718091317647555 -0.12816092953197558" rpy="0 0 0"/>
+    <mass value="0.0009149123527778959"/>
+    <inertia ixx="2.458253653416599e-08" iyy="3.690004529002119e-08" izz="2.5235615389931096e-08" ixy="2.031940023736373e-09" iyz="3.519423359036824e-09" ixz="5.655828797685727e-10"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.096722 0.096494 -0.010236" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/rotulaA23.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.096722 0.096494 -0.010236" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/rotulaA23.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rotulaA21">
+  <inertial>
+    <origin xyz="-0.15126585201360498 0.020718091313310913 0.10507955631871137" rpy="0 0 0"/>
+    <mass value="0.0009149123527778959"/>
+    <inertia ixx="2.4571240188054456e-08" iyy="3.69452306741319e-08" izz="2.5201726351933615e-08" ixy="2.000048273227742e-09" iyz="-3.464185227441098e-09" ixz="-5.460170344596222e-10"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.096722 0.096494 -0.010236" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/rotulaA21.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.096722 0.096494 -0.010236" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/rotulaA21.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+<-->
+<link name="BielaComp1rotulaA11">
+  <inertial>
+    <origin xyz="-0.012834326181232356 9.131725371702704e-08 -0.023789387955983413" rpy="0 0 0"/>
+    <mass value="0.007994073110544229"/>
+    <inertia ixx="1.6813134601377966e-06" iyy="2.2646653288046408e-06" izz="7.67628483127277e-07" ixy="6.630245939949486e-14" iyz="-3.573468018887305e-14" ixz="-6.952358827012968e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.03193 0.075776 0.080081" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/BielaComp1rotulaA11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.03193 0.075776 0.080081" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/BielaComp1rotulaA11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BielaComp2rotulaA11">
+  <inertial>
+    <origin xyz="0.16681698096367015 9.131536174433741e-08 0.07901017573162157" rpy="0 0 0"/>
+    <mass value="0.007994073110544229"/>
+    <inertia ixx="3.939577913388088e-07" iyy="2.264665328804668e-06" izz="2.054984151926163e-06" ixy="-2.173933776050685e-15" iyz="7.529353562240563e-14" ixz="-4.8019259235750115e-08"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.03193 0.075776 0.080081" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/BielaComp2rotulaA11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.03193 0.075776 0.080081" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/BielaComp2rotulaA11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BielaComp3rotulaA11">
+  <inertial>
+    <origin xyz="-0.013923378889573658 9.131343942092585e-08 0.1819990849996439" rpy="0 0 0"/>
+    <mass value="0.007994073110544229"/>
+    <inertia ixx="1.5636290708029613e-06" iyy="2.2646653288047085e-06" izz="8.853128724620581e-07" ixy="-6.320526309906878e-14" iyz="-4.0963855029406415e-14" ixz="7.596247597769706e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.03193 0.075776 0.080081" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/BielaComp3rotulaA11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.03193 0.075776 0.080081" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/BielaComp3rotulaA11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid29" type="fixed">
+  <origin xyz="0.005 0.023 0.0" rpy="0 0 0"/>
+  <parent link="micro-metal-gearmotor-carbon-backshaft1"/>
+  <child link="magnetic-encoder-with-side-entry-connector-for-micro-metal-gearmotors1"/>
+</joint>
+
+<joint name="Rigid30" type="fixed">
+  <origin xyz="0.005 0.027 0.0" rpy="0 0 0"/>
+  <parent link="micro-metal-gearmotor-carbon-backshaft1"/>
+  <child link="magnetic-encoder-disc-for-micro-metal-gearmotors1"/>
+</joint>
+
+<joint name="Rigid31" type="fixed">
+  <origin xyz="0.010386 -0.044776 -0.00061" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="micro-metal-gearmotor-carbon-backshaft1"/>
+</joint>
+
+<joint name="Rev32" type="continuous">
+  <origin xyz="0.005 0.0 0.0" rpy="0 0 0"/>
+  <parent link="micro-metal-gearmotor-carbon-backshaft1"/>
+  <child link="ejemotor1"/>
+  <axis xyz="0.0 -1.0 -0.0"/>
+</joint>
+<transmission name="Rev32_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev32">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev32_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rigid33" type="fixed">
+  <origin xyz="0.0 -0.01 0.0" rpy="0 0 0"/>
+  <parent link="ejemotor1"/>
+  <child link="MultManivela1"/>
+</joint>
+
+<joint name="Rev34" type="continuous">
+  <origin xyz="0.020319 0.084776 0.031929" rpy="0 0 0"/>
+  <parent link="MultManivela1"/>
+  <child link="BielaComp2Biela1"/>
+  <axis xyz="0.0 -1.0 -0.0"/>
+</joint>
+<transmission name="Rev34_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev34">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev34_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev35" type="continuous">
+  <origin xyz="0.020319 0.084776 -0.007042" rpy="0 0 0"/>
+  <parent link="MultManivela1"/>
+  <child link="BielaComp3Biela1"/>
+  <axis xyz="0.0 -1.0 -0.0"/>
+</joint>
+<transmission name="Rev35_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev35">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev35_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev36" type="continuous">
+  <origin xyz="-0.013963 -0.021 -0.017643" rpy="0 0 0"/>
+  <parent link="MultManivela1"/>
+  <child link="BielaComp1Biela1"/>
+  <axis xyz="0.0 -1.0 -0.0"/>
+</joint>
+<transmission name="Rev36_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev36">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev36_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Ball37" type="spherical">
+  <origin xyz="0.128652 -0.020718 0.090317" rpy="0 0 0"/>
+  <parent link="BielaComp3rotulaA11"/>
+  <child link="rotulaA21"/>
+  <axis xyz="1 0 0"/>
+</joint>
+<transmission name="Ball37_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Ball37">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Ball37_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Ball38" type="spherical">
+  <origin xyz="0.128652 -0.020718 0.090317" rpy="0 0 0"/>
+  <parent link="BielaComp2rotulaA11"/>
+  <child link="rotulaA22"/>
+  <axis xyz="1 0 0"/>
+</joint>
+<transmission name="Ball38_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Ball38">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Ball38_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Ball39" type="spherical">
+  <origin xyz="0.128652 -0.020718 0.090317" rpy="0 0 0"/>
+  <parent link="BielaComp1rotulaA11"/>
+  <child link="rotulaA23"/>
+  <axis xyz="1 0 0"/>
+</joint>
+<transmission name="Ball39_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Ball39">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Ball39_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev40" type="continuous">
+  <origin xyz="-0.0286 -0.073552 -0.117053" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Dedo3DedoA1"/>
+  <axis xyz="-0.866025 -0.0 0.5"/>
+</joint>
+<transmission name="Rev40_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev40">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev40_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev41" type="continuous">
+  <origin xyz="0.145386 -0.058776 -0.00711" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Dedo1DedoA1"/>
+  <axis xyz="-0.0 0.0 -1.0"/>
+</joint>
+<transmission name="Rev41_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev41">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev41_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev42" type="continuous">
+  <origin xyz="-0.03085 -0.073552 0.113315" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Dedo2DedoA1"/>
+  <axis xyz="0.866025 0.0 0.5"/>
+</joint>
+<transmission name="Rev42_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev42">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev42_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rigid43" type="fixed">
+  <origin xyz="0.145386 -0.058776 -0.01711" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="DIN_EN_ISO_4014_-_M6_x_401"/>
+</joint>
+
+<joint name="Rigid44" type="fixed">
+  <origin xyz="0.145386 -0.058776 0.01589" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="DIN_EN_ISO_4036_-_M61"/>
+</joint>
+
+<joint name="Rigid45" type="fixed">
+  <origin xyz="-0.035325 -0.058776 0.120224" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="DIN_EN_ISO_4014_-_M6_x_403"/>
+</joint>
+
+<joint name="Rigid46" type="fixed">
+  <origin xyz="-0.048518 -0.073552 0.103114" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="DIN_EN_ISO_4036_-_M63"/>
+</joint>
+
+<joint name="Rigid47" type="fixed">
+  <origin xyz="-0.063904 -0.058776 -0.104943" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="DIN_EN_ISO_4014_-_M6_x_402"/>
+</joint>
+
+<joint name="Rigid48" type="fixed">
+  <origin xyz="-0.019939 -0.073552 -0.122053" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="DIN_EN_ISO_4036_-_M62"/>
+</joint>
+
+<joint name="Cyl49" type="prismatic">
+  <origin xyz="-0.048664 -0.037718 0.017346" rpy="0 0 0"/>
+  <parent link="Dedo1DedoA1"/>
+  <child link="rotulaA22"/>
+  <limit lower="0.001" upper="0.002" velocity="1"/>
+  <axis xyz="1 0 0"/>
+</joint>
+<transmission name="Cyl49_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Cyl49">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Cyl49_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Cyl50" type="prismatic">
+  <origin xyz="0.125322 -0.022942 0.127289" rpy="0 0 0"/>
+  <parent link="Dedo3DedoA1"/>
+  <child link="rotulaA23"/>
+  <limit lower="0.001" upper="0.002" velocity="1"/>
+  <axis xyz="1 0 0"/>
+</joint>
+<transmission name="Cyl50_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Cyl50">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Cyl50_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Cyl51" type="prismatic">
+  <origin xyz="0.127572 -0.022942 -0.103079" rpy="0 0 0"/>
+  <parent link="Dedo2DedoA1"/>
+  <child link="rotulaA21"/>
+  <limit lower="0.001" upper="0.002" velocity="1"/>
+  <axis xyz="1 0 0"/>
+</joint>
+<transmission name="Cyl51_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Cyl51">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Cyl51_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="BielaComp1_Rigid3" type="fixed">
+  <origin xyz="-0.033353 0.0 -0.061828" rpy="0 0 0"/>
+  <parent link="BielaComp1Biela1"/>
+  <child link="BielaComp1rotulaA11"/>
+</joint>
+
+<joint name="BielaComp2_Rigid3" type="fixed">
+  <origin xyz="-0.067635 -0.105776 -0.1114" rpy="0 0 0"/>
+  <parent link="BielaComp2Biela1"/>
+  <child link="BielaComp2rotulaA11"/>
+</joint>
+
+<joint name="BielaComp3_Rigid3" type="fixed">
+  <origin xyz="-0.067635 -0.105776 -0.072429" rpy="0 0 0"/>
+  <parent link="BielaComp3Biela1"/>
+  <child link="BielaComp3rotulaA11"/>
+</joint>
+
+</robot>
